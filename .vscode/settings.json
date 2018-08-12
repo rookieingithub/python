@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "cstdio": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled", // 因为有clang的lint，所以关掉
+    "C_Cpp.autocomplete": "Disabled", // 因为有clang的补全，所以关掉
+    "clang.cflags": [ // 控制c语言静态检测的参数
+        "--target=x86_64-w64-mingw",
+        "-std=c11",
+        "-Wall"
+    ],
+    "clang.cxxflags": [ // 控制c++静态检测时的参数
+        "--target=x86_64-w64-mingw",
+        "-std=c++17",
+        "-Wall"
+    ],
+    "clang.completion.enable":true // 效果效果比cpptools要好
+}
